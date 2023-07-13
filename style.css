@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Goldman', cursive;
+}
+body {
+    background-color: black;
+}
+.cards-field {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    gap: 12.5px;
+    user-select: none;
+}
+.card {
+    width: 75px;
+    height: 75px;
+    transition: .5s;
+    border: none;
+}
+.slidecontainer {
+    width: 338.3px;
+    margin-top: 70px;
+    margin-bottom: 350px;
+    transition: .5s;
+}
+.range-slider {
+    appearance: none;
+    background-color: transparent;
+    cursor: default;
+}
+.submit-level {
+    width: 100px;
+    height: 35px;
+    border: none;
+    background-color: darkslateblue;
+    padding: 10px 15px;
+    margin-top: 25px;
+    text-align: center;
+    margin-left: 120px;
+    border-radius: 1px;
+    color: whitesmoke;
+    letter-spacing: .25px;
+    transition: .5s;
+}
+.submit-level:hover {
+    background-color: lightcoral;
+}
+.range-level-text span {
+    margin-right: 97.5px;
+    color: whitesmoke;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 338.3px;
+      appearance: none;
+      background-color: darkslateblue;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 15px;
+      appearance: none;
+      height: 15px;
+      cursor: default;
+      background: url(./Vector.svg) center/cover no-repeat;
+      background-size: 14px;
+    }
+}
